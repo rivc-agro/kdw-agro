@@ -6,7 +6,7 @@ package-lock.json
 *.ai
 *.log
 *.pdf
-*.php
+# *.php
 /**/*.psd
 /.git/
 /**/_backstage
