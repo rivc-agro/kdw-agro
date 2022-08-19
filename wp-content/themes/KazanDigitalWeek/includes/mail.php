@@ -106,19 +106,22 @@ $formType = $_POST["reg-type"];
 $message = "";
 
 $photo = $_FILES['photo']['name'];
-$photo_url = str_replace(" ", "%20", $photo);
+$photo_url = str_replace(" ", "_", $photo);
 $photo_tmp = $_FILES['photo']['tmp_name'];
 $uploads_dir_photo =  'files/' . $photo_url;
 move_uploaded_file($photo_tmp, $uploads_dir_photo);
 
 $annotation = $_FILES['annotation']['name'];
-$annotation_url = str_replace(" ", "%20", $annotation);
+$annotation_url = str_replace(" ", "_", $annotation);
 $annotation_tmp = $_FILES['annotation']['tmp_name'];
 $uploads_dir_annotation =  'files/' . $annotation_url;
 move_uploaded_file($annotation_tmp, $uploads_dir_annotation);
 
 $url_photo = "http://" . $_SERVER['SERVER_NAME'] . '/wp-content/themes/KazanDigitalWeek/includes/' . $uploads_dir_photo;
 $url_annotation = "http://" . $_SERVER['SERVER_NAME'] . '/wp-content/themes/KazanDigitalWeek/includes/' . $uploads_dir_annotation;
+
+echo $url_photo;
+echo $url_annotation;
 
 
 if ($formType === $speeker) {
