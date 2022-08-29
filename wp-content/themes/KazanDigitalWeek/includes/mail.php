@@ -120,9 +120,6 @@ move_uploaded_file($annotation_tmp, $uploads_dir_annotation);
 $url_photo = "http://" . $_SERVER['SERVER_NAME'] . '/wp-content/themes/KazanDigitalWeek/includes/' . $uploads_dir_photo;
 $url_annotation = "http://" . $_SERVER['SERVER_NAME'] . '/wp-content/themes/KazanDigitalWeek/includes/' . $uploads_dir_annotation;
 
-echo $url_photo;
-echo $url_annotation;
-
 
 if ($formType === $speeker) {
     $name = $_POST["name"];

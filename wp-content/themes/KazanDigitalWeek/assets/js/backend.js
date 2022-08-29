@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 form.classList.remove("is-active");
               };
 
+              if (form.dataset.formName === 'guest') {
+                location.href='https://kazandigitalweek.com/ru/site';
+              }
+
               if (form.closest(".js-modal-callbak")) {
                 window.modal.onClose("callback");
                 window.modal.onOpen("successCallback");
