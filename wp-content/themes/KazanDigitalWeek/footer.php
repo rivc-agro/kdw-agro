@@ -80,7 +80,7 @@
                 <?php echo carbon_get_theme_option('participant_label_heading' . carbon_lang()); ?>
               </div>
             </label>
-            <label class="registration-type__item">
+            <a href="https://kazandigitalweek.com/ru/sign-up" class="registration-type__item">
               <input class="visually-hidden js-registration-label" type="radio" name="type" value="guest"><span class="_layer"></span>
               <svg class="icon icon-men registration-type__item-icon" width="50" height="50">
                 <use xlink:href="<?php echo get_template_directory_uri(); ?>/assets/images/sprites/sprite-mono.svg#men"></use>
@@ -89,7 +89,7 @@
               <div class="registration-type__item-text">
                 <?php echo carbon_get_theme_option('participant_label_heading' . carbon_lang()); ?>
               </div>
-            </label>
+            </a>
           </div>
           <button class="button-reset registration-type__btn registration__btn disabled"><?php echo carbon_get_theme_option('participant_btn' . carbon_lang()); ?></button>
         </div>
