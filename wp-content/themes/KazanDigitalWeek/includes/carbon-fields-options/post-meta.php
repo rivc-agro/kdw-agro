@@ -122,6 +122,15 @@ Container::make('post_meta', 'Дополнительные поля')
         Field::make('image', 'img', 'Изображение')->set_width(50),
         Field::make('text', 'txt', 'Ссылка на сайт')->set_width(50),
       ]),
+  ])
+
+  ->add_tab('Одиннадцатый экран(СТРАТЕГИЧЕСКИЕ ОТРАСЛЕВЫЕ ПАРТНЕРЫ)', [
+    Field::make('text', 'partners3_heading' . carbon_lang(), 'Заголовок'),
+    Field::make('complex', 'partners3' . carbon_lang(), 'СТРАТЕГИЧЕСКИЕ ОТРАСЛЕВЫЕ ПАРТНЕРЫ')
+      ->add_fields([
+        Field::make('image', 'img', 'Изображение')->set_width(50),
+        Field::make('text', 'txt', 'Ссылка на сайт')->set_width(50),
+      ]),
   ]);
 
 Container::make('post_meta', 'Дополнительные поля')
