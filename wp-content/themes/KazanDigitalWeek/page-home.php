@@ -228,11 +228,11 @@ $numbers_img_bg_src = wp_get_attachment_image_url($numbers_img_bg_id, 'full');
             <div class="programm__themes">
                 <?php echo carbon_get_post_meta($page_id, 'prorgamm_descr' . carbon_lang()); ?>
                 <div class="programm__themes-btn"></div>
-                <!-- <button class="button-reset button programm__themes-btn">
+                <a href="<?php echo carbon_get_post_meta($page_id, 'prorgamm_file'); ?>" target="_blank" class="button-reset button programm__themes-btn">
                     <span class="_border-top"></span>
                     <span class="_border-bottom"></span>
-                    Смотреть Программу форума
-                </button> -->
+                    <?php echo carbon_get_post_meta($page_id, 'prorgamm_btn_txt' . carbon_lang()); ?>
+                </a>
             </div>
         </div>
     </div>
