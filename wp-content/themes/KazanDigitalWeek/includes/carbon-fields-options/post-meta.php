@@ -69,7 +69,7 @@ Container::make('post_meta', 'Дополнительные поля')
     Field::make('rich_text', 'prorgamm_heading_text' . carbon_lang(), 'Текст-описание под заголовком'),
     Field::make('rich_text', 'prorgamm_descr' . carbon_lang(), 'Темы:'),
     Field::make('text', 'prorgamm_btn_txt' . carbon_lang(), 'Текст кнопки'),
-    Field::make('file', 'prorgamm_file', 'Файл')
+    Field::make('file', 'prorgamm_file' . carbon_lang(), 'Файл')
       ->set_value_type('url')->set_width(50),
   ])
 
@@ -197,6 +197,7 @@ Container::make('post_meta', 'Дополнительные поля')
     Field::make('text', 'prorgamm_heading' . carbon_lang(), 'Заголовок'),
     Field::make('rich_text', 'prorgamm_heading_text' . carbon_lang(), 'Текст-описание под заголовком'),
     Field::make('rich_text', 'prorgamm_descr' . carbon_lang(), 'Темы:'),
+    Field::make('text', 'prorgamm_btn_txt' . carbon_lang(), 'Текст кнопки'),
   ])
 
   ->add_tab('Седьмой экран(Галлерея)', [
