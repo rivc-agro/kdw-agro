@@ -86,8 +86,7 @@ Container::make('post_meta', 'Дополнительные поля')
     Field::make('complex', 'exposure_links' . carbon_lang(), 'Ссылки')
       ->add_fields([
         Field::make('text', 'name', 'Имя')->set_width(50),
-        Field::make('file', 'file', 'Файл')
-          ->set_value_type('url')->set_width(50),
+        Field::make('text', 'file', 'Файл')->set_width(50),
       ]),
   ])
 
